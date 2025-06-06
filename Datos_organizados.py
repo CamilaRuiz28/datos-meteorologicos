@@ -136,7 +136,7 @@ with st.expander("☁️ Subir archivo a GitHub"):
     usuario = st.text_input("Usuario GitHub")
     repo = st.text_input("Repositorio", placeholder="ej. datos-meteorologicos")
     token = st.text_input("Token de acceso", type="password")
-    nombre_archivo = st.text_input("Nombre del archivo", value="public/promedios_horarios.csv")
+    nombre_archivo = st.text_input("Nombre del archivo", value="Datos_public/promedios_horarios.csv")
 
     if st.button("📤 Subir a GitHub"):
         if 'csv_data' not in st.session_state:
